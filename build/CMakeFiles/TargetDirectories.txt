@@ -1,3 +1,5 @@
 /Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles/autoshop_app.dir
+/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles/autoshop_tests.dir
+/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles/test.dir
 /Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles/edit_cache.dir
 /Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles/rebuild_cache.dir

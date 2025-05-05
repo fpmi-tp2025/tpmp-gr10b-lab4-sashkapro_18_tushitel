@@ -197,6 +197,17 @@ std::vector<Repair> searchRepairs(sqlite3* db, const std::string& query) {
             repair.start_date = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 6));
             repair.end_date = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 7));
             
+            // Загружаем изображения для ремонта
+            const char* img_sql = "SELECT image_path FROM repair_images WHERE repair_id = ?";
+            sqlite3_stmt* img_stmt;
+            if (sqlite3_prepare_v2(db, img_sql, -1, &img_stmt, nullptr) == SQLITE_OK) {
+                sqlite3_bind_int(img_stmt, 1, repair.id);
+                while (sqlite3_step(img_stmt) == SQLITE_ROW) {
+                    repair.images.push_back(reinterpret_cast<const char*>(sqlite3_column_text(img_stmt, 0)));
+                }
+            }
+            sqlite3_finalize(img_stmt);
+            
             repairs.push_back(repair);
         }
     }

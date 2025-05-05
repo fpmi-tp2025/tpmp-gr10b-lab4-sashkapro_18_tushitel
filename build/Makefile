@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /Users/artemgavrilov/Desktop/Coding/autoshop_project/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/opt/homebrew/Cellar/cmake/3.30.3/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -129,12 +139,26 @@ autoshop_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/build
 .PHONY : autoshop_app/fast
 
+#=============================================================================
+# Target rules for targets named autoshop_tests
+
+# Build rule for target.
+autoshop_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 autoshop_tests
+.PHONY : autoshop_tests
+
+# fast build rule for target.
+autoshop_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/build
+.PHONY : autoshop_tests/fast
+
 src/auth.o: src/auth.cpp.o
 .PHONY : src/auth.o
 
 # target to build an object file
 src/auth.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/auth.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/auth.cpp.o
 .PHONY : src/auth.cpp.o
 
 src/auth.i: src/auth.cpp.i
@@ -143,6 +167,7 @@ src/auth.i: src/auth.cpp.i
 # target to preprocess a source file
 src/auth.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/auth.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/auth.cpp.i
 .PHONY : src/auth.cpp.i
 
 src/auth.s: src/auth.cpp.s
@@ -151,6 +176,7 @@ src/auth.s: src/auth.cpp.s
 # target to generate assembly for a file
 src/auth.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/auth.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/auth.cpp.s
 .PHONY : src/auth.cpp.s
 
 src/db_utils.o: src/db_utils.cpp.o
@@ -159,6 +185,7 @@ src/db_utils.o: src/db_utils.cpp.o
 # target to build an object file
 src/db_utils.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/db_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/db_utils.cpp.o
 .PHONY : src/db_utils.cpp.o
 
 src/db_utils.i: src/db_utils.cpp.i
@@ -167,6 +194,7 @@ src/db_utils.i: src/db_utils.cpp.i
 # target to preprocess a source file
 src/db_utils.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/db_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/db_utils.cpp.i
 .PHONY : src/db_utils.cpp.i
 
 src/db_utils.s: src/db_utils.cpp.s
@@ -175,6 +203,7 @@ src/db_utils.s: src/db_utils.cpp.s
 # target to generate assembly for a file
 src/db_utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/db_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/db_utils.cpp.s
 .PHONY : src/db_utils.cpp.s
 
 src/image_utils.o: src/image_utils.cpp.o
@@ -183,6 +212,7 @@ src/image_utils.o: src/image_utils.cpp.o
 # target to build an object file
 src/image_utils.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/image_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/image_utils.cpp.o
 .PHONY : src/image_utils.cpp.o
 
 src/image_utils.i: src/image_utils.cpp.i
@@ -191,6 +221,7 @@ src/image_utils.i: src/image_utils.cpp.i
 # target to preprocess a source file
 src/image_utils.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/image_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/image_utils.cpp.i
 .PHONY : src/image_utils.cpp.i
 
 src/image_utils.s: src/image_utils.cpp.s
@@ -199,6 +230,7 @@ src/image_utils.s: src/image_utils.cpp.s
 # target to generate assembly for a file
 src/image_utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/image_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/image_utils.cpp.s
 .PHONY : src/image_utils.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -225,6 +257,105 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/main_utils.o: src/main_utils.cpp.o
+.PHONY : src/main_utils.o
+
+# target to build an object file
+src/main_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/main_utils.cpp.o
+.PHONY : src/main_utils.cpp.o
+
+src/main_utils.i: src/main_utils.cpp.i
+.PHONY : src/main_utils.i
+
+# target to preprocess a source file
+src/main_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/main_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/main_utils.cpp.i
+.PHONY : src/main_utils.cpp.i
+
+src/main_utils.s: src/main_utils.cpp.s
+.PHONY : src/main_utils.s
+
+# target to generate assembly for a file
+src/main_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/src/main_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/src/main_utils.cpp.s
+.PHONY : src/main_utils.cpp.s
+
+tests/test_db_utils.o: tests/test_db_utils.cpp.o
+.PHONY : tests/test_db_utils.o
+
+# target to build an object file
+tests/test_db_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/tests/test_db_utils.cpp.o
+.PHONY : tests/test_db_utils.cpp.o
+
+tests/test_db_utils.i: tests/test_db_utils.cpp.i
+.PHONY : tests/test_db_utils.i
+
+# target to preprocess a source file
+tests/test_db_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/tests/test_db_utils.cpp.i
+.PHONY : tests/test_db_utils.cpp.i
+
+tests/test_db_utils.s: tests/test_db_utils.cpp.s
+.PHONY : tests/test_db_utils.s
+
+# target to generate assembly for a file
+tests/test_db_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/tests/test_db_utils.cpp.s
+.PHONY : tests/test_db_utils.cpp.s
+
+tests/test_image_utils.o: tests/test_image_utils.cpp.o
+.PHONY : tests/test_image_utils.o
+
+# target to build an object file
+tests/test_image_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/tests/test_image_utils.cpp.o
+.PHONY : tests/test_image_utils.cpp.o
+
+tests/test_image_utils.i: tests/test_image_utils.cpp.i
+.PHONY : tests/test_image_utils.i
+
+# target to preprocess a source file
+tests/test_image_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/tests/test_image_utils.cpp.i
+.PHONY : tests/test_image_utils.cpp.i
+
+tests/test_image_utils.s: tests/test_image_utils.cpp.s
+.PHONY : tests/test_image_utils.s
+
+# target to generate assembly for a file
+tests/test_image_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/tests/test_image_utils.cpp.s
+.PHONY : tests/test_image_utils.cpp.s
+
+tests/test_main.o: tests/test_main.cpp.o
+.PHONY : tests/test_main.o
+
+# target to build an object file
+tests/test_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/tests/test_main.cpp.o
+.PHONY : tests/test_main.cpp.o
+
+tests/test_main.i: tests/test_main.cpp.i
+.PHONY : tests/test_main.i
+
+# target to preprocess a source file
+tests/test_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/tests/test_main.cpp.i
+.PHONY : tests/test_main.cpp.i
+
+tests/test_main.s: tests/test_main.cpp.s
+.PHONY : tests/test_main.s
+
+# target to generate assembly for a file
+tests/test_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/tests/test_main.cpp.s
+.PHONY : tests/test_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,7 +364,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... autoshop_app"
+	@echo "... autoshop_tests"
 	@echo "... src/auth.o"
 	@echo "... src/auth.i"
 	@echo "... src/auth.s"
@@ -246,6 +379,18 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/main_utils.o"
+	@echo "... src/main_utils.i"
+	@echo "... src/main_utils.s"
+	@echo "... tests/test_db_utils.o"
+	@echo "... tests/test_db_utils.i"
+	@echo "... tests/test_db_utils.s"
+	@echo "... tests/test_image_utils.o"
+	@echo "... tests/test_image_utils.i"
+	@echo "... tests/test_image_utils.s"
+	@echo "... tests/test_main.o"
+	@echo "... tests/test_main.i"
+	@echo "... tests/test_main.s"
 .PHONY : help
 
 

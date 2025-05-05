@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /Users/artemgavrilov/Desktop/Coding/autoshop_project/build
 
 # The main recursive "all" target.
 all: CMakeFiles/autoshop_app.dir/all
+all: CMakeFiles/autoshop_tests.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/autoshop_app.dir/clean
+clean: CMakeFiles/autoshop_tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,12 +83,12 @@ clean: CMakeFiles/autoshop_app.dir/clean
 CMakeFiles/autoshop_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target autoshop_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target autoshop_app"
 .PHONY : CMakeFiles/autoshop_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/autoshop_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/autoshop_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles 0
 .PHONY : CMakeFiles/autoshop_app.dir/rule
@@ -99,6 +101,32 @@ autoshop_app: CMakeFiles/autoshop_app.dir/rule
 CMakeFiles/autoshop_app.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_app.dir/build.make CMakeFiles/autoshop_app.dir/clean
 .PHONY : CMakeFiles/autoshop_app.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/autoshop_tests.dir
+
+# All Build rule for target.
+CMakeFiles/autoshop_tests.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14 "Built target autoshop_tests"
+.PHONY : CMakeFiles/autoshop_tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/autoshop_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/autoshop_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles 0
+.PHONY : CMakeFiles/autoshop_tests.dir/rule
+
+# Convenience name for target.
+autoshop_tests: CMakeFiles/autoshop_tests.dir/rule
+.PHONY : autoshop_tests
+
+# clean rule for target.
+CMakeFiles/autoshop_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autoshop_tests.dir/build.make CMakeFiles/autoshop_tests.dir/clean
+.PHONY : CMakeFiles/autoshop_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

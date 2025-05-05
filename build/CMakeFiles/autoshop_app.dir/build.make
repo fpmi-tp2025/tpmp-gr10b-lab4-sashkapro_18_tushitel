@@ -69,19 +69,19 @@ include CMakeFiles/autoshop_app.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/autoshop_app.dir/flags.make
 
-CMakeFiles/autoshop_app.dir/src/auth.cpp.o: CMakeFiles/autoshop_app.dir/flags.make
-CMakeFiles/autoshop_app.dir/src/auth.cpp.o: /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/auth.cpp
-CMakeFiles/autoshop_app.dir/src/auth.cpp.o: CMakeFiles/autoshop_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/autoshop_app.dir/src/auth.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/autoshop_app.dir/src/auth.cpp.o -MF CMakeFiles/autoshop_app.dir/src/auth.cpp.o.d -o CMakeFiles/autoshop_app.dir/src/auth.cpp.o -c /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/auth.cpp
+CMakeFiles/autoshop_app.dir/src/main.cpp.o: CMakeFiles/autoshop_app.dir/flags.make
+CMakeFiles/autoshop_app.dir/src/main.cpp.o: /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main.cpp
+CMakeFiles/autoshop_app.dir/src/main.cpp.o: CMakeFiles/autoshop_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/autoshop_app.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/autoshop_app.dir/src/main.cpp.o -MF CMakeFiles/autoshop_app.dir/src/main.cpp.o.d -o CMakeFiles/autoshop_app.dir/src/main.cpp.o -c /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main.cpp
 
-CMakeFiles/autoshop_app.dir/src/auth.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/autoshop_app.dir/src/auth.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/auth.cpp > CMakeFiles/autoshop_app.dir/src/auth.cpp.i
+CMakeFiles/autoshop_app.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/autoshop_app.dir/src/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main.cpp > CMakeFiles/autoshop_app.dir/src/main.cpp.i
 
-CMakeFiles/autoshop_app.dir/src/auth.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/autoshop_app.dir/src/auth.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/auth.cpp -o CMakeFiles/autoshop_app.dir/src/auth.cpp.s
+CMakeFiles/autoshop_app.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/autoshop_app.dir/src/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main.cpp -o CMakeFiles/autoshop_app.dir/src/main.cpp.s
 
 CMakeFiles/autoshop_app.dir/src/db_utils.cpp.o: CMakeFiles/autoshop_app.dir/flags.make
 CMakeFiles/autoshop_app.dir/src/db_utils.cpp.o: /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/db_utils.cpp
@@ -111,38 +111,54 @@ CMakeFiles/autoshop_app.dir/src/image_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/autoshop_app.dir/src/image_utils.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/image_utils.cpp -o CMakeFiles/autoshop_app.dir/src/image_utils.cpp.s
 
-CMakeFiles/autoshop_app.dir/src/main.cpp.o: CMakeFiles/autoshop_app.dir/flags.make
-CMakeFiles/autoshop_app.dir/src/main.cpp.o: /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main.cpp
-CMakeFiles/autoshop_app.dir/src/main.cpp.o: CMakeFiles/autoshop_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/autoshop_app.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/autoshop_app.dir/src/main.cpp.o -MF CMakeFiles/autoshop_app.dir/src/main.cpp.o.d -o CMakeFiles/autoshop_app.dir/src/main.cpp.o -c /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main.cpp
+CMakeFiles/autoshop_app.dir/src/auth.cpp.o: CMakeFiles/autoshop_app.dir/flags.make
+CMakeFiles/autoshop_app.dir/src/auth.cpp.o: /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/auth.cpp
+CMakeFiles/autoshop_app.dir/src/auth.cpp.o: CMakeFiles/autoshop_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/autoshop_app.dir/src/auth.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/autoshop_app.dir/src/auth.cpp.o -MF CMakeFiles/autoshop_app.dir/src/auth.cpp.o.d -o CMakeFiles/autoshop_app.dir/src/auth.cpp.o -c /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/auth.cpp
 
-CMakeFiles/autoshop_app.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/autoshop_app.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main.cpp > CMakeFiles/autoshop_app.dir/src/main.cpp.i
+CMakeFiles/autoshop_app.dir/src/auth.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/autoshop_app.dir/src/auth.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/auth.cpp > CMakeFiles/autoshop_app.dir/src/auth.cpp.i
 
-CMakeFiles/autoshop_app.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/autoshop_app.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main.cpp -o CMakeFiles/autoshop_app.dir/src/main.cpp.s
+CMakeFiles/autoshop_app.dir/src/auth.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/autoshop_app.dir/src/auth.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/auth.cpp -o CMakeFiles/autoshop_app.dir/src/auth.cpp.s
+
+CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o: CMakeFiles/autoshop_app.dir/flags.make
+CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o: /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main_utils.cpp
+CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o: CMakeFiles/autoshop_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o -MF CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o.d -o CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o -c /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main_utils.cpp
+
+CMakeFiles/autoshop_app.dir/src/main_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/autoshop_app.dir/src/main_utils.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main_utils.cpp > CMakeFiles/autoshop_app.dir/src/main_utils.cpp.i
+
+CMakeFiles/autoshop_app.dir/src/main_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/autoshop_app.dir/src/main_utils.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemgavrilov/Desktop/Coding/autoshop_project/src/main_utils.cpp -o CMakeFiles/autoshop_app.dir/src/main_utils.cpp.s
 
 # Object files for target autoshop_app
 autoshop_app_OBJECTS = \
-"CMakeFiles/autoshop_app.dir/src/auth.cpp.o" \
+"CMakeFiles/autoshop_app.dir/src/main.cpp.o" \
 "CMakeFiles/autoshop_app.dir/src/db_utils.cpp.o" \
 "CMakeFiles/autoshop_app.dir/src/image_utils.cpp.o" \
-"CMakeFiles/autoshop_app.dir/src/main.cpp.o"
+"CMakeFiles/autoshop_app.dir/src/auth.cpp.o" \
+"CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o"
 
 # External object files for target autoshop_app
 autoshop_app_EXTERNAL_OBJECTS =
 
-autoshop_app: CMakeFiles/autoshop_app.dir/src/auth.cpp.o
+autoshop_app: CMakeFiles/autoshop_app.dir/src/main.cpp.o
 autoshop_app: CMakeFiles/autoshop_app.dir/src/db_utils.cpp.o
 autoshop_app: CMakeFiles/autoshop_app.dir/src/image_utils.cpp.o
-autoshop_app: CMakeFiles/autoshop_app.dir/src/main.cpp.o
+autoshop_app: CMakeFiles/autoshop_app.dir/src/auth.cpp.o
+autoshop_app: CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o
 autoshop_app: CMakeFiles/autoshop_app.dir/build.make
 autoshop_app: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/libsqlite3.tbd
 autoshop_app: CMakeFiles/autoshop_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable autoshop_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/artemgavrilov/Desktop/Coding/autoshop_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable autoshop_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/autoshop_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

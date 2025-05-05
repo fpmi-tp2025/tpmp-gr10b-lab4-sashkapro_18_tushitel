@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/autoshop_app.dir/src/image_utils.cpp.o.d"
   "CMakeFiles/autoshop_app.dir/src/main.cpp.o"
   "CMakeFiles/autoshop_app.dir/src/main.cpp.o.d"
+  "CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o"
+  "CMakeFiles/autoshop_app.dir/src/main_utils.cpp.o.d"
   "autoshop_app"
   "autoshop_app.pdb"
 )
