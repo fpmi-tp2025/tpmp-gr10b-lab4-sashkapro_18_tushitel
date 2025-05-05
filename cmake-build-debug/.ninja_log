@@ -1,0 +1,11 @@
+# ninja log v5
+13	699	1746461790750217770	CMakeFiles/autoshop_app.dir/src/db_utils.cpp.o	ffed688128c5497b
+13	635	1746461790684759108	CMakeFiles/autoshop_app.dir/src/auth.cpp.o	8f893c5295d983b3
+702	833	1746460950602174767	autoshop_app	122c8bd6ce7cfb88
+5	701	1746460950468402683	CMakeFiles/autoshop_app.dir/src/main.cpp.o	43ea168a5f7433a
+13	691	1746461790742418206	CMakeFiles/autoshop_app.dir/src/image_utils.cpp.o	824aca4a7362a440
+4	596	1746462131663006583	CMakeFiles/autoshop_app.dir/src/auth.cpp.o	e2d8f05ce69f97c3
+5	645	1746462131708771902	CMakeFiles/autoshop_app.dir/src/main.cpp.o	43ea168a5f7433a
+5	658	1746462131723126178	CMakeFiles/autoshop_app.dir/src/image_utils.cpp.o	7f1d7b77031d849a
+5	672	1746462131739478917	CMakeFiles/autoshop_app.dir/src/db_utils.cpp.o	24da8230f7d765b1
+672	768	1746462131838345585	autoshop_app	6c2d1fb480bcc265
