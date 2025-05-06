@@ -3,6 +3,7 @@
 #include <iomanip>
 #include <ctime>
 #include <sstream>
+#include <algorithm>
 
 void showMenu() {
     std::cout << "\n=== Автосервис - Система управления ремонтами ===\n";
